@@ -5,6 +5,7 @@ import {SnackbarProvider} from 'notistack';
 
 import Index from './template/index';
 import Login from './template/login';
+import Regsiter from './template/register';
 function App() {
   return (
     <SnackbarProvider>
@@ -13,6 +14,9 @@ function App() {
           
           <Route path="/login">
             <Login />
+          </Route>
+          <Route path = "/register">
+            <Regsiter />
           </Route>
           <Route path="/">
             <Index />
